@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, FileText, DollarSign } from 'lucide-react';
+import { Calendar, FileText, IndianRupee } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import { Transaction } from '../../types';
 import { generateId, getStorageData, setStorageData } from '../../utils/helpers';
@@ -94,7 +94,7 @@ export const TransactionModal: React.FC<TransactionModalProps> = ({
           label="Amount *"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
-          icon={DollarSign}
+          icon={IndianRupee}
           placeholder="Enter amount"
           min="0"
           step="0.01"
